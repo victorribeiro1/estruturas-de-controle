@@ -1,0 +1,18 @@
+::-webkit-scrollbar {
+    width: 4px;
+    z-index: -1;
+
+    &.hidden {
+        width: 0 !important;
+    }
+    
+    &-thumb {
+        background: var(--color-thumb);
+        // border-radius: 999px;
+        height: 10px;
+    }
+    
+    &-track {
+        background-color: var(--color-quaternary);
+    }
+}

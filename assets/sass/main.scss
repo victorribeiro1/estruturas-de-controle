@@ -1,0 +1,33 @@
+@import "abstract/animations";
+@import "abstract/variables";
+
+@import "base/base";
+@import "base/cursor";
+@import "base/fonts";
+@import "base/mixin";
+@import "base/scrollbar";
+@import "base/typography";
+@import "base/utilities";
+
+@import "components/header";
+
+@import "layout/background";
+@import "layout/navigation";
+
+@import "themes/dark-mode";
+@import "themes/light-mode";
+
+@import "pages/exercicios/exercicio-1";
+@import "pages/exercicios/exercicio-2";
+// @import "pages/exercicios/exercicio-3";
+// @import "pages/exercicios/exercicio-4";
+@import "pages/exercicios/exercicio-5";
+@import "pages/exercicios/exercicio-6";
+@import "pages/exercicios/exercicio-7";
+// @import "pages/exercicios/exercicio-8";
+@import "pages/exercicios/exercicio-9";
+// @import "pages/exercicios/exercicio-10";
+@import "pages/exercicios/exercicio-11";
+
+@import "pages/index/intro";
+@import "pages/index/menu";

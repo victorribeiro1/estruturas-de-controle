@@ -1,0 +1,25 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    scroll-behavior: smooth;
+    position: relative;
+
+    overflow-x: hidden;
+}
+
+body {
+    box-sizing: border-box;
+    position: relative;
+    overflow-x: hidden;
+}
+
+::selection {
+    background-color: transparent;
+    color: #fff;
+}

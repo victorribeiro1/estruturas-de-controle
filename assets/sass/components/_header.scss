@@ -1,0 +1,37 @@
+.header-box {
+    position: relative;
+    z-index: 1;
+
+    text-align: center;
+
+    height: 15%;
+
+    margin-top: 1.5rem;
+
+    h2 {
+        font-size: 3rem;
+
+
+        position: absolute;
+
+        display: inline-block;
+        position: relative;
+
+        &::before {
+            content: "";
+
+            background-image: url(../../../medias/svgs/divider-1.svg);
+            background-size: cover;
+            background-position: center;
+
+            position: absolute;
+
+            bottom: -3.7rem;
+            left: 50%;
+            transform: translateX(-50%);
+
+            width: 18.4rem;
+            height: 5rem;
+        }
+    }
+}

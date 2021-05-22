@@ -1,0 +1,59 @@
+.exercise-6 {
+    @include defaultFormatting;
+
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    &__content-box {
+        height: 85%;
+        width: 100%;
+
+        position: relative;
+        z-index: 1;
+
+        position: absolute;
+        bottom: 0;
+        right: 0;
+
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    &__inputNumber {
+        display: inline;
+        font-size: 8rem;
+
+        background-color: #000;
+        border-radius: 4px;
+        color: #FFF;
+
+        text-align: center;
+        font-family: "New York-1";
+
+        width: 18%;
+        flex: none;
+
+        border: none;
+        outline: none;
+
+        position: absolute;
+        left: 20%;
+    }
+    
+    .square-box {
+        position: relative;
+        right: -30rem;
+    }
+
+    .row {
+        font-size: 1.7rem;
+        text-transform: uppercase;
+        font-family: "New York-1";
+        font-weight: 1000;
+    }
+}

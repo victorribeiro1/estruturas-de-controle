@@ -1,0 +1,78 @@
+.background {
+    height: 100vh;
+    width: 100%;
+
+    position: absolute;
+    z-index: 1;
+
+    // &__colors-box {
+        
+    // }
+
+    &__color {
+        position: absolute;
+        
+        &--1 {
+            background-color: #fab5a2;
+
+            height: 30rem;
+            width:  80%;
+            
+            right: 0rem;
+            top:  -8rem;
+        }
+        
+        &--2 {
+            background-color: #F8F7E3;
+
+            height: 50rem;
+            width:  50rem;
+
+            left:  5rem;
+            bottom: -30rem;
+        }
+
+        &--3 {
+            background-color: #f0ccee;
+
+            height: 50rem;
+            width:  50rem;
+
+            right:  -10rem;
+            bottom: -25rem;
+        }
+        
+        &--4 {
+            background-color: #d6eff3;
+
+            display: none;
+
+            height: 30rem;
+            width:  30rem;
+
+            left:  20rem;
+            bottom: 17rem;
+        }
+
+        &--5 {
+            background-color: #fab5a2;
+
+            height: 25rem;
+            width:  25rem;
+
+            left:  -15rem;
+            bottom: 17rem;
+        }
+    }
+
+    &__blur {
+        backdrop-filter: blur(120px);
+
+        height: 100vh;
+        width:  100%;
+
+        position: absolute;
+
+        z-index: 1;
+    }
+}

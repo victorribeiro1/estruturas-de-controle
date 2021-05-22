@@ -1,0 +1,7 @@
+html[current-theme='dark'] {
+
+    * {
+        transition-timing-function: ease-out;
+        transition-duration: .2s;
+    }
+}

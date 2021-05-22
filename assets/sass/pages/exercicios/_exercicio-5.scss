@@ -1,0 +1,79 @@
+.exercise-5 {
+    @include defaultFormatting;
+
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    &__content-box {
+        height: 85%;
+        width: 100%;
+
+        position: relative;
+        z-index: 1;
+
+        position: absolute;
+        bottom: 0;
+        right: 0;
+
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    &__inputNumber {
+        display: inline;
+        font-size: 8rem;
+
+        background-color: #000;
+        border-radius: 4px;
+        color: #FFF;
+
+        text-align: center;
+        font-family: "New York-1";
+
+        width: 22%;
+        flex: none;
+
+        border: none;
+        outline: none;
+    }
+    
+    &__multiplication-table {
+        border: 2px solid black;
+        border-radius: 3px;
+
+        display: flex;
+        flex-direction: column;
+        justify-self: center;
+        align-items: center;
+
+        font-size: 3rem;
+        font-weight: 1000;
+        text-align: right;
+
+        .row {
+
+            width: 100%;
+
+            padding-right: 2.9rem;
+
+
+            &:not(:nth-of-type(10)) {
+                border-bottom: 3px solid black;
+            }
+
+            display: flex;
+            justify-self: center;
+            align-items: center;
+
+            * {
+                text-align: center;
+                width: 8rem;
+            }
+        }
+    }
+}

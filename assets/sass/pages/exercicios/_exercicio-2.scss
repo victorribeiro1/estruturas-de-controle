@@ -1,0 +1,274 @@
+.exercise-2 {
+    @include defaultFormatting;
+
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    &__content-box {
+        height: 85%;
+        width: 100%;
+
+        position: relative;
+        z-index: 1;
+
+        position: absolute;
+        bottom: 0;
+        right: 0;
+
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    &__input-box {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        position: relative;
+        right: -19rem;
+
+        top: -5rem;
+        
+        width: 17%;
+        
+        span {
+            pointer-events: none;
+            height: 100%;
+            font-size: 2rem;
+
+            color: #757575;
+
+            transform: translate(-75px, 9px);
+
+            &.invalid {
+                color: red;
+            }
+        }
+    }
+
+    &__inputText {
+        display: inline;
+
+        font-size: 5rem;
+
+        padding-left: 2.3rem;
+
+        background-color: transparent;
+        border: none;
+        border-bottom: 2px solid black;
+        color: #000;
+
+        text-align: left;
+        font-family: "New York-1";
+
+        width: 80%;
+        flex: none;
+
+        outline: none;
+
+        position: relative;
+        display: block;
+
+        transition: .1s linear;
+
+        &.invalid {
+            border-bottom: 2px solid red;
+        }
+    }
+
+    .checkbox-box {
+        position: relative;
+        left: -17.5rem;
+        top: 2rem;
+
+        font-size: 3rem;
+
+        display: flex;
+        text-align: center;
+        
+    }
+    
+    .checkbox-elements {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .ball {
+        // background-color: #000;
+        border: 2px solid black;
+
+        border-radius: 50%;
+
+        height: 1.6rem;
+        width:  1.6rem;
+
+        margin-right: 1rem;
+    }
+
+    .input {
+        display: none;
+
+        &:active {
+            & ~ .ball {
+                background-color: #000;
+            }
+        }
+    }
+
+    .ball {
+        background-color: transparent;
+        transition: .1s linear;
+
+        &.check {
+            background-color: #000;
+        }
+    }
+    
+    .label {
+        cursor: pointer;
+
+        font-size: 2.6rem;
+
+        
+    }
+
+    .gender {
+        margin-right: 2.6rem;
+
+        color: black;
+        transition: .1s linear;
+
+        &.invalid {
+            color: red;
+        }
+    }
+
+    .space {
+        margin: 0 3rem;
+        font-weight: 1000;
+    }
+
+    &__button {
+        background-color: black;
+        border-radius: 999px;
+        border: 1px solid black;
+
+        cursor: pointer;
+
+        font-size: 1.9rem;
+
+        height: 5rem;
+        width:  24rem;
+
+        position: relative;
+        bottom: -4rem;
+        left: -135px;
+
+        overflow: hidden;
+
+        transform: translateY(100px);
+        transition: .1s linear;
+        
+        &:hover {
+            .exercise-2__button-text {
+                position: relative;
+                top: -50px;
+            }
+        }
+        
+        &::before {
+            content: "";
+            
+            background-color: #fff;
+            border-radius: 999px;
+            
+            @include absoluteCentering;
+            
+            opacity: 0;
+            
+            height: 100%;
+            width: 80%;
+            
+            // transition: .6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+            transition: .7s cubic-bezier(0.215, 0.610, 0.355, 1);
+
+            z-index: -1;
+        }
+
+        &:hover::before {
+            opacity: 1;
+            
+            height: 100%;
+            width: 100%;
+            
+            z-index: -1;
+        }
+    }
+
+    &__button-text {
+        position: relative;
+        top: 0;
+
+        color: #fff;
+        letter-spacing: 1px;
+        font-family: "New York-1", 'Times New Roman', Times, serif;
+        
+        // transition: .6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+        transition: .7s cubic-bezier(0.215, 0.610, 0.355, 1);
+        
+        &::before {
+            content: "Verificar";
+            
+            color: black;
+            letter-spacing: 1px;
+
+            position: absolute;
+            left: 50%;
+            bottom: -50px;
+
+            transform: translateX(-50%) !important;
+        }
+    }
+    
+    &__result {
+        border: 2px solid black;
+        border-radius: 3px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        font-size: 3.4rem;
+        font-weight: 1000;
+        text-align: right;
+
+        height: 10rem;
+        width: 40rem;
+
+        color: #000;
+
+        position: relative;
+        left: -5.9rem;
+        top: -2rem;
+
+        &::before {
+            content: "Peso Ideal -";
+
+            position: absolute;
+            top: -45px;
+
+            color: black;
+            font-size: 2rem;
+
+            align-self: flex-start;
+
+        }
+    }
+}
