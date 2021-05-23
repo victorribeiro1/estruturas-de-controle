@@ -8,12 +8,27 @@
     justify-content: flex-start;
     align-items: center;
 
+    z-index: 5;
+
+    header {
+        filter: blur(0px);
+        transition: .5s linear;
+        &.menu-is-active {
+            filter: blur(8px);
+        }
+    }
+
     &__content-box {
+        filter: blur(0px);
+        transition: .5s linear;
+        &.menu-is-active {
+            filter: blur(8px);
+        }
         height: 85%;
         width: 100%;
 
         position: relative;
-        z-index: 1;
+        z-index: 1000;
 
         position: absolute;
         bottom: 0;

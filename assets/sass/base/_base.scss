@@ -10,13 +10,20 @@ html {
     scroll-behavior: smooth;
     position: relative;
 
-    overflow-x: hidden;
+    // overflow: hidden;
+
+    max-height: 100vh;
+    max-width: 100vw;
 }
 
 body {
     box-sizing: border-box;
     position: relative;
-    overflow-x: hidden;
+    top: 0rem;
+    // overflow-x: hidden;
+
+    max-height: 100vh;
+    max-width: 100vw;
 }
 
 ::selection {

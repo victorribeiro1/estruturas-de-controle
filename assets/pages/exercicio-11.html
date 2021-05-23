@@ -5,71 +5,120 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="author" content="Victor Ribeiro Cunha">
-        <link rel="stylesheet" href="../css/style.min.css">
+        <link rel="stylesheet" href="../css/style.css">
         <title>Exercício 11</title>
     </head>
     <body>
-
-        <div class="toggle-menu">
-            <div class="toggle-menu__button">
-                <div class="toggle-menu__icons-box">
+        <div class="toggle-menu__button-box">
+            <label class="toggle-menu__button" for="toggle" id="navigationButton">
+                <div class="toggle-menu__icon-box">
                     <div class="toggle-menu__icon toggle-menu__icon--1"></div>
                     <div class="toggle-menu__icon toggle-menu__icon--2"></div>
                 </div>
-            </div>
-
-            <div class="toggle-menu__background">
-                <nav class="toggle-menu__nav">
-                    <ul class="toggle-menu__nav__row">
-                        <li>
-                            <a href="exercicio-1.html" class="toggle-menu__nav__link">Exercício 1</a>
-                        </li>
-
-                        <li>
-                            <a href="exercicio-2.html" class="toggle-menu__nav__link">Exercício 2</a>
-                        </li>
-
-                        <li>
-                            <a href="exercicio-3.html" class="toggle-menu__nav__link">Exercício 3</a>
-                        </li>
-
-                        <li>
-                            <a href="exercicio-4.html" class="toggle-menu__nav__link">Exercício 4</a>
-                        </li>
-                    </ul>
-                    <ul class="toggle-menu__nav__row">
-                        <li>
-                            <a href="exercicio-5.html" class="toggle-menu__nav__link">Exercício 5</a>
-                        </li>
-
-                        <li>
-                            <a href="exercicio-6.html" class="toggle-menu__nav__link">Exercício 6</a>
-                        </li>
-
-                        <li>
-                            <a href="exercicio-7.html" class="toggle-menu__nav__link">Exercício 7</a>
-                        </li>
-
-                        <li>
-                            <a href="exercicio-8.html" class="toggle-menu__nav__link">Exercício 8</a>
-                        </li>
-                    </ul>
-                    <ul class="toggle-menu__nav__row">
-                        <li>
-                            <a href="exercicio-9.html" class="toggle-menu__nav__link">Exercício 9</a>
-                        </li>
-
-                        <li>
-                            <a href="exercicio-10.html" class="toggle-menu__nav__link">Exercício 10</a>
-                        </li>
-
-                        <li>
-                            <a href="exercicio-11.html" class="toggle-menu__nav__link">Exercício 11</a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
+                <div class="toggle-menu__button-background"></div>
+            </label>
         </div>
+        
+        <div class="toggle-menu"> <!-- START OF TOGGLE-MENU -->
+            <input type="checkbox" class="toggle-menu__checkbox" id="toggle" />
+
+
+            <div class="toggle-menu__background-box toggle-menu__background-box--1">
+                <div class="toggle-menu__background toggle-menu__background--1"></div>
+            </div>
+
+            <nav class="toggle-menu__nav">
+                <div class="toggle-menu__list-box toggle-menu__list-box--services">
+                    <div class="toggle-menu__heading-box">
+                        <h3 class="toggle-menu__heading"></h3>
+                    </div>
+
+                    <ul class="toggle-menu__list toggle-menu__list--services">
+                        <li class="toggle-menu__item">
+                            <a href="exercicio-1.html" class="toggle-menu__link link link--big">Exercício 1</a>
+                        </li>
+
+                        <li class="toggle-menu__item">
+                            <a href="exercicio-2.html" class="toggle-menu__link link link--big">Exercício 2</a>
+                        </li>
+
+                        <li class="toggle-menu__item">
+                            <a href="exercicio-3.html" class="toggle-menu__link link link--big">Exercício 3</a>
+                        </li>
+
+                        <li class="toggle-menu__item">
+                            <a href="exercicio-4.html" class="toggle-menu__link link link--big">Exercício 4</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="toggle-menu__list-box toggle-menu__list-box--services">
+                    <div class="toggle-menu__heading-box">
+                        <h3 class="toggle-menu__heading"></h3>
+                    </div>
+
+                    <ul class="toggle-menu__list toggle-menu__list--services">
+                        <li class="toggle-menu__item">
+                            <a href="exercicio-5.html" class="toggle-menu__link link link--big">Exercício 5</a>
+                        </li>
+
+                        <li class="toggle-menu__item">
+                            <a href="exercicio-6.html" class="toggle-menu__link link link--big">Exercício 6</a>
+                        </li>
+
+                        <li class="toggle-menu__item">
+                            <a href="exercicio-7.html" class="toggle-menu__link link link--big">Exercício 7</a>
+                        </li>
+
+                        <li class="toggle-menu__item">
+                            <a href="exercicio-8.html" class="toggle-menu__link link link--big">Exercício 8</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="toggle-menu__list-box toggle-menu__list-box--see-also">
+                    <div class="toggle-menu__heading-box">
+                        <h3 class="toggle-menu__heading"></h3>
+                    </div>
+
+                    <ul class="toggle-menu__list toggle-menu__list--see-also">
+                        <li class="toggle-menu__item">
+                            <a href="exercicio-9.html" class="toggle-menu__link link link--big">Exercício 9</a>
+                        </li>
+                        <li class="toggle-menu__item">
+                            <a href="exercicio-10.html" class="toggle-menu__link link link--big">Exercício 10</a>
+                        </li>
+                        <li class="toggle-menu__item">
+                            <a href="exercicio-11.html" class="toggle-menu__link link link--big">Exercício 11</a>
+                        </li>
+
+                        <li class="toggle-menu__item">
+                            <a href="../../index.html" class="toggle-menu__link link link--big">Início</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="toggle-menu__icons-box">
+                    <a href="" class="">
+                        <svg class="icon icon--instagram">
+                            <use xlink:href="media/svgs/symbol-defs.svg#icon-instagram"></use>
+                        </svg>
+                    </a>
+
+                    <a href="" class="">
+                        <svg class="icon icon--facebook">
+                            <use xlink:href="media/svgs/symbol-defs.svg#icon-facebook"></use>
+                        </svg>
+                    </a>
+
+                    <a href="" class="">
+                        <svg class="icon icon--youtube">
+                            <use xlink:href="media/svgs/symbol-defs.svg#icon-youtube"></use>
+                        </svg>
+                    </a>
+                </div>
+            </nav>
+        </div> <!-- END OF TOGGLE-MENU -->
 
         <div class="exercise-11">
             <div class="background">

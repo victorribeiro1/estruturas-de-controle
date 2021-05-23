@@ -78,7 +78,7 @@ select.addEventListener('change', e => {
 })
 
 function removeLists() {
-    document.querySelectorAll('ul').forEach(list => {
+    document.querySelectorAll('.exercise-11__content-box ul').forEach(list => {
         listBox.removeChild(list)
     })
 }
