@@ -1,6 +1,6 @@
 const squareBox = document.querySelector('.square-box')
 
-const inputNumber = document.querySelector('input')
+const inputNumber = document.querySelector('.exercise-7__content-box input')
 
 inputNumber.addEventListener('change', () => {
     removeSquare()

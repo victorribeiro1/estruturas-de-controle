@@ -1,4 +1,4 @@
-const inputs = document.querySelectorAll('input')
+const inputs = document.querySelectorAll('.exercise-9__content-box input')
 
 const table = document.querySelector('.exercise-9__table')
 const numbersBox = document.querySelectorAll('.numbers-box')

@@ -1,4 +1,4 @@
-const inputs = document.querySelectorAll('input')
+const inputs = document.querySelectorAll('.exercise-4__content-box input')
 const button = document.getElementById('button')
 const output = document.getElementById('output')
 
