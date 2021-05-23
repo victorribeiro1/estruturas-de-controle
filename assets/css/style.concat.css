@@ -644,6 +644,7 @@ html[current-theme='light'] * {
     background-color: transparent;
     border: none;
     border-bottom: 2px solid black;
+    transition: .1s linear;
     color: #000;
     text-align: left;
     font-family: "New York-1";
@@ -652,6 +653,8 @@ html[current-theme='light'] * {
     outline: none;
     position: relative;
     display: block; }
+    .exercise-1__inputText.invalid {
+      border-bottom: 2px solid red; }
     .exercise-1__inputText::before {
       content: "KM/h";
       position: absolute;
