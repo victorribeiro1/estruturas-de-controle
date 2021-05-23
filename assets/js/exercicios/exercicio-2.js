@@ -48,15 +48,14 @@ function isValid() {
 
 // pegando a opção marcada pelo usuário
 function getGender() {
-    inputs.forEach(input => {
-        if (input.checked) input.setAttribute('checked', 'true')
-    })
-    return document.querySelector('[checked]').value
+    return inputs[0].checked == true ? inputs[0].value : inputs[1].value
 }
 
 // calculando o peso ideal
 function calcIdealWeight($height, $gender) {
     $height /= 100;
+
+    console.log($gender)
     
     if ($gender == 'masculino') $idealWeight = (72.7 * $height) - 58;
     else $idealWeight = (62.1 * $height) - 44.7;
@@ -85,5 +84,5 @@ inputs.forEach(input => {
 button2.addEventListener('click', () => {
     if (isValid())
         document.querySelector('.exercise-2__result').innerText = 
-        calcIdealWeight(textInput.value, getGender()).toFixed(2)
+        calcIdealWeight(+textInput.value, getGender()).toFixed(2)
 })

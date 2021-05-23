@@ -360,7 +360,7 @@ html[current-theme='light'] * {
     filter: blur(0px);
     transition: .5s linear; }
     .exercise-1 header.menu-is-active {
-      filter: blur(8px); }
+      filter: blur(15px); }
   .exercise-1__content-box {
     filter: blur(0px);
     transition: .5s linear;
@@ -375,7 +375,7 @@ html[current-theme='light'] * {
     justify-content: space-evenly;
     align-items: center; }
     .exercise-1__content-box.menu-is-active {
-      filter: blur(8px); }
+      filter: blur(15px); }
     .exercise-1__content-box * {
       position: relative;
       top: -10px; }
@@ -503,7 +503,7 @@ html[current-theme='light'] * {
     filter: blur(0px);
     transition: .5s linear; }
     .exercise-2 header.menu-is-active {
-      filter: blur(8px); }
+      filter: blur(15px); }
   .exercise-2__content-box {
     filter: blur(0px);
     transition: .5s linear;
@@ -518,7 +518,7 @@ html[current-theme='light'] * {
     justify-content: space-evenly;
     align-items: center; }
     .exercise-2__content-box.menu-is-active {
-      filter: blur(8px); }
+      filter: blur(15px); }
   .exercise-2__input-box {
     display: flex;
     justify-content: space-between;
@@ -680,7 +680,7 @@ html[current-theme='light'] * {
     filter: blur(0px);
     transition: .5s linear; }
     .exercise-3 header.menu-is-active {
-      filter: blur(8px); }
+      filter: blur(15px); }
   .exercise-3__content-box {
     filter: blur(0px);
     transition: .5s linear;
@@ -695,7 +695,7 @@ html[current-theme='light'] * {
     justify-content: space-evenly;
     align-items: center; }
     .exercise-3__content-box.menu-is-active {
-      filter: blur(8px); }
+      filter: blur(15px); }
   .exercise-3 .info {
     font-size: 3rem;
     color: #696969;
@@ -833,7 +833,7 @@ html[current-theme='light'] * {
     filter: blur(0px);
     transition: .5s linear; }
     .exercise-4 header.menu-is-active {
-      filter: blur(8px); }
+      filter: blur(15px); }
   .exercise-4__content-box {
     filter: blur(0px);
     transition: .5s linear;
@@ -848,7 +848,7 @@ html[current-theme='light'] * {
     justify-content: space-evenly;
     align-items: center; }
     .exercise-4__content-box.menu-is-active {
-      filter: blur(8px); }
+      filter: blur(15px); }
   .exercise-4 .info {
     font-size: 3rem;
     color: #696969;
@@ -1017,7 +1017,7 @@ html[current-theme='light'] * {
     filter: blur(0px);
     transition: .5s linear; }
     .exercise-5 header.menu-is-active {
-      filter: blur(8px); }
+      filter: blur(15px); }
   .exercise-5__content-box {
     filter: blur(0px);
     transition: .5s linear;
@@ -1032,7 +1032,7 @@ html[current-theme='light'] * {
     justify-content: space-evenly;
     align-items: center; }
     .exercise-5__content-box.menu-is-active {
-      filter: blur(8px); }
+      filter: blur(15px); }
   .exercise-5__inputNumber {
     display: inline;
     font-size: 8rem;
@@ -1082,7 +1082,7 @@ html[current-theme='light'] * {
     filter: blur(0px);
     transition: .5s linear; }
     .exercise-6 header.menu-is-active {
-      filter: blur(8px); }
+      filter: blur(15px); }
   .exercise-6__content-box {
     filter: blur(0px);
     transition: .5s linear;
@@ -1097,7 +1097,7 @@ html[current-theme='light'] * {
     justify-content: space-evenly;
     align-items: center; }
     .exercise-6__content-box.menu-is-active {
-      filter: blur(8px); }
+      filter: blur(15px); }
   .exercise-6__inputNumber {
     display: inline;
     font-size: 8rem;
@@ -1136,7 +1136,7 @@ html[current-theme='light'] * {
     filter: blur(0px);
     transition: .5s linear; }
     .exercise-7 header.menu-is-active {
-      filter: blur(8px); }
+      filter: blur(15px); }
   .exercise-7__content-box {
     filter: blur(0px);
     transition: .5s linear;
@@ -1190,7 +1190,7 @@ html[current-theme='light'] * {
     filter: blur(0px);
     transition: .5s linear; }
     .exercise-8 header.menu-is-active {
-      filter: blur(8px); }
+      filter: blur(15px); }
   .exercise-8__content-box {
     filter: blur(0px);
     transition: .5s linear;
@@ -1205,7 +1205,7 @@ html[current-theme='light'] * {
     justify-content: space-evenly;
     align-items: center; }
     .exercise-8__content-box.menu-is-active {
-      filter: blur(8px); }
+      filter: blur(15px); }
   .exercise-8 .input-row--2 {
     transform: translateX(-5px); }
   .exercise-8 .input-row span {
@@ -1378,7 +1378,7 @@ html[current-theme='light'] * {
     filter: blur(0px);
     transition: .5s linear; }
     .exercise-9 header.menu-is-active {
-      filter: blur(8px); }
+      filter: blur(15px); }
   .exercise-9__content-box {
     filter: blur(0px);
     transition: .5s linear;
@@ -1393,7 +1393,7 @@ html[current-theme='light'] * {
     justify-content: space-evenly;
     align-items: center; }
     .exercise-9__content-box.menu-is-active {
-      filter: blur(8px); }
+      filter: blur(15px); }
   .exercise-9 .input-row--2 {
     transform: translateX(-5px); }
   .exercise-9 .input-row span {
@@ -1535,7 +1535,7 @@ html[current-theme='light'] * {
     filter: blur(0px);
     transition: .5s linear; }
     .exercise-10 header.menu-is-active {
-      filter: blur(8px); }
+      filter: blur(15px); }
   .exercise-10__content-box {
     filter: blur(0px);
     transition: .5s linear;
@@ -1553,7 +1553,7 @@ html[current-theme='light'] * {
     position: relative;
     top: -11rem; }
     .exercise-10__content-box.menu-is-active {
-      filter: blur(8px); }
+      filter: blur(15px); }
   .exercise-10 .input-row--2 {
     transform: translateX(-5px); }
   .exercise-10 .input-row span {
@@ -1702,7 +1702,7 @@ html[current-theme='light'] * {
     filter: blur(0px);
     transition: .5s linear; }
     .exercise-11 header.menu-is-active {
-      filter: blur(8px); }
+      filter: blur(15px); }
   .exercise-11__content-box {
     filter: blur(0px);
     transition: .5s linear;
@@ -1718,7 +1718,7 @@ html[current-theme='light'] * {
     justify-content: center;
     align-items: center; }
     .exercise-11__content-box.menu-is-active {
-      filter: blur(8px); }
+      filter: blur(15px); }
   .exercise-11__select-box {
     position: absolute;
     top: 4rem; }
