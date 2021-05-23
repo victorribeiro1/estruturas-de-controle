@@ -1529,7 +1529,8 @@ html[current-theme='light'] * {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  align-items: center; }
+  align-items: center;
+  z-index: 0; }
   .exercise-10 header {
     filter: blur(0px);
     transition: .5s linear; }
@@ -1546,8 +1547,11 @@ html[current-theme='light'] * {
     bottom: 0;
     right: 0;
     display: flex;
+    flex-direction: column;
     justify-content: space-evenly;
-    align-items: center; }
+    align-items: center;
+    position: relative;
+    top: -11rem; }
     .exercise-10__content-box.menu-is-active {
       filter: blur(8px); }
   .exercise-10 .input-row--2 {
@@ -1566,6 +1570,13 @@ html[current-theme='light'] * {
     flex: none;
     border: none;
     outline: none; }
+  .exercise-10 h3 {
+    position: relative;
+    bottom: -12rem;
+    z-index: 1;
+    font-size: 3rem; }
+  .exercise-10 .output {
+    font-size: 6rem; }
   .exercise-10__input-box {
     display: flex;
     justify-content: space-between;
