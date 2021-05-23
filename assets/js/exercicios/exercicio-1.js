@@ -14,8 +14,10 @@ function driverStatus($speed) {
 
 // EVENTS
 button.addEventListener('click', () => {
-    if (isNaN(+inputText.value)) inputText.classList.add('invalid')
-    else {
+    if (isNaN(+inputText.value)) {
+        inputText.classList.add('invalid')
+        result.innerText = "Preencha o campo";
+    } else {
         inputText.classList.remove('invalid')
         result.innerText = driverStatus(+inputText.value);
     }
