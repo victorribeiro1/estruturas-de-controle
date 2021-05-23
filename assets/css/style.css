@@ -96,6 +96,24 @@ body {
 
 html {
   font-size: 62.5%; }
+  @media only screen and (max-width: 71.875em) {
+    html {
+      font-size: 56.25%; } }
+  @media only screen and (max-width: 59.375em) {
+    html {
+      font-size: 48%; } }
+  @media only screen and (max-width: 51.25em) {
+    html {
+      font-size: 44%; } }
+  @media only screen and (max-width: 46.875em) {
+    html {
+      font-size: 40%; } }
+  @media only screen and (max-width: 42.5em) {
+    html {
+      font-size: 37%; } }
+  @media only screen and (max-width: 39.375em) {
+    html {
+      font-size: 30%; } }
 
 body {
   font-family: "New York-1", 'Times New Roman', Times, serif; }

@@ -1,5 +1,29 @@
 html {
-    font-size: 62.5%;
+    font-size: 62.5%; // 1rem = 10px
+    
+    @media only screen and (max-width: $second-breakpoint) {
+        font-size: 56.25%; // 1rem = 9px
+    }
+
+    @media only screen and (max-width: $third-breakpoint) {
+        font-size: 48%; // 1rem = 7.68px
+    }
+
+    @media only screen and (max-width: $fourth-breakpoint) {
+        font-size: 44%; // 1rem = 7.08px
+    }
+
+    @media only screen and (max-width: $fifth-breakpoint) {
+        font-size: 40%; // 1rem = 7.68px
+    }
+
+    @media only screen and (max-width: $sixth-breakpoint) {
+        font-size: 37%; // 1rem = 7.68px
+    }
+
+    @media only screen and (max-width: $seventh-breakpoint) {
+        font-size: 30%; // 1rem = 7.68px
+    }
 }
 
 body {
