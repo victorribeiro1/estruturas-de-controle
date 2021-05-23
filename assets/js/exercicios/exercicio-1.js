@@ -11,7 +11,7 @@ function driverStatus($speed) {
 
     /* abaixo */ if ($speed < 0) return `${$speed} km/h?`;
     /* abaixo */ else if ($speed == 0) return "Preencha o campo";
-    /* abaixo */ else if ($speed <= $okSpeed) return "Velocidade OK!";
+    /* abaixo */ else if ($speed < $okSpeed) return "Velocidade OK!";
     /* média  */ else if ($speed <= $limitSpeed) return "Cuidado!";
     /* acima  */ else return 'Multado!';
 }

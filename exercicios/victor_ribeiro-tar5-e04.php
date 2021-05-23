@@ -5,7 +5,7 @@
     function checkAgeOf($nome, $idade) {
         list($idadeAdulta, $idadeIdosa) = [18, 65];
 
-        if ($idade <= $idadeAdulta) return "$nome, você é menor de idade.";
+        if ($idade < $idadeAdulta) return "$nome, você é menor de idade.";
         else if ($idade <= $idadeIdosa) return "$nome, você é maior de idade.";
         else return "$nome, você é maior de 65 anos.";
     }

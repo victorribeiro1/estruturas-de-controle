@@ -15,24 +15,49 @@ function isValid() {
     return true
 }
 
-inputs.forEach(input => {
-    input.addEventListener('change', () => {
-        if (isValid()) {
-            populateList("between", getIntervalBetween(inputs[0].value, inputs[1].value))
-            populateList("odd", getOddNumbers(getIntervalBetween(inputs[0].value, inputs[1].value)))
-            populateList("sum", sumOddNumbers(getOddNumbers(getIntervalBetween(inputs[0].value, inputs[1].value))))
-        }
+let counter1 = 1
+let counter2 = 30
+
+function confer() {
+
+    let isTrue = false
+
+    
+    if (isValid()) isTrue = true
+
+    if (isTrue) {
+        populateList("between", getIntervalBetween(+inputs[0].value, +inputs[1].value))
+        populateList("odd", getOddNumbers(getIntervalBetween(+inputs[0].value, +inputs[1].value)))
+        populateList("sum", sumOddNumbers(getOddNumbers(getIntervalBetween(+inputs[0].value, +inputs[1].value))))
+    }
+}
+
+    inputs[0].addEventListener('change', () => {
+        if (isValid()) confer()
     })
-})
+
+    inputs[1].addEventListener('change', () => {
+        if (isValid()) confer()
+    })
 
 function getIntervalBetween($x, $y) {
     $allNumbers = [];
 
-    $min = $x < $y ? $x : $y;
-    $max = $x > $y ? $x : $y;
+    if ($x == $y || $x - $y == 1 || $x - $y == -1) {
+        $allNumbers.push(0);
+        return $allNumbers;
+    }
 
-    while ($min < $max - 1) {
-        $allNumbers.push(++$min);
+    let min = $x < $y ? $x : $y;
+    let max = $x > $y ? $x : $y;
+
+
+    console.log('Min: ' + min)
+    console.log('Max: ' + max)
+    
+    while (min < max - 1) {
+        console.log('Depois do while: ' + $allNumbers)
+        $allNumbers.push(++min);
     }
 
     return $allNumbers;
@@ -45,14 +70,22 @@ function getOddNumbers($allNumbers) {
         if ($number % 2 !== 0) $oddNumbers.push($number);
     })
     
-    // console.log($allNumbers)
     return $oddNumbers;
 } 
 
 function sumOddNumbers($oddNumbers) {
-    const $totalSum = $oddNumbers.reduce((current, next) => current += next)
+    // console.log($oddNumbers)
+    // const $totalSum = $oddNumbers.reduce((current, next) => current += next)
 
-    return [$totalSum]
+    let totalSumArray = []
+    var $totalSum = 0
+
+    for (let number of $oddNumbers) {
+        $totalSum += number
+    }
+    totalSumArray.push($totalSum)
+
+    return [totalSumArray]
 }
 
 function removeListItems(listName) {

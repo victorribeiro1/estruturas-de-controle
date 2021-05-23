@@ -5,7 +5,7 @@
     function driverStatus($speed) {
         list($okSpeed, $limitSpeed) = [50, 60]; // DESTRUCTURING: declarando duas varáveis de maneira mais ágil
 
-        /* abaixo */ if ($speed <= $okSpeed) return "ok";
+        /* abaixo */ if ($speed < $okSpeed) return "ok";
         /* média  */ else if ($speed <= $limitSpeed) return "atenção";
         /* acima  */ else return 'multado';
     }

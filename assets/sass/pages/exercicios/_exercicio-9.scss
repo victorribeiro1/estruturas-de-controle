@@ -24,6 +24,34 @@
         align-items: center;
     }
 
+    .input-row {
+        &--2 {
+            transform: translateX(-5px);
+        }
+
+        span {
+            font-size: 4.2rem !important;
+        }
+    }
+
+    &__inputNumber {
+        display: inline;
+        font-size: 6rem;
+
+        background-color: #000;
+        border-radius: 4px;
+        color: #FFF;
+
+        text-align: center;
+        font-family: "New York-1";
+
+        width: 17rem;
+        flex: none;
+
+        border: none;
+        outline: none;
+    }
+
     &__input-box {
         display: flex;
         justify-content: space-between;
@@ -146,89 +174,6 @@
         }
     }
 
-    &__button {
-        background-color: black;
-        border-radius: 999px;
-        border: 1px solid black;
-
-        cursor: pointer;
-
-        font-size: 1.9rem;
-
-        height: 5rem;
-        width:  24rem;
-
-        position: relative;
-        bottom: -4rem;
-        left: -135px;
-
-        overflow: hidden;
-
-        transform: translateY(100px);
-        transition: .1s linear;
-        
-        &:hover {
-            .exercise-9__button-text {
-                position: relative;
-                top: -50px;
-            }
-        }
-        
-        &::before {
-            content: "";
-            
-            background-color: #fff;
-            border-radius: 999px;
-            
-            @include absoluteCentering;
-            
-            opacity: 0;
-            
-            height: 100%;
-            width: 80%;
-            
-            // transition: .6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-            transition: .7s cubic-bezier(0.215, 0.610, 0.355, 1);
-
-            z-index: -1;
-        }
-
-        &:hover::before {
-            opacity: 1;
-            
-            height: 100%;
-            width: 100%;
-            
-            z-index: -1;
-        }
-    }
-
-    &__button-text {
-        position: relative;
-        top: 0;
-
-        color: #fff;
-        letter-spacing: 1px;
-        font-family: "New York-1", 'Times New Roman', Times, serif;
-        
-        // transition: .6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-        transition: .7s cubic-bezier(0.215, 0.610, 0.355, 1);
-        
-        &::before {
-            content: "Verificar";
-            
-            color: black;
-            letter-spacing: 1px;
-
-            position: absolute;
-            left: 50%;
-            bottom: -50px;
-
-            transform: translateX(-50%) !important;
-        }
-    
-    }
-
     &__table {
         border: 2px solid black;
         border-radius: 3px;
@@ -239,10 +184,12 @@
         width: 33.34%;
 
         white-space: nowrap;
-
+        
+        position: relative;
+        
         min-height: 30rem;
         max-height: 30rem;
-
+        
         &:not(:last-child) {
             border-right: 2px solid black;
         }
@@ -255,15 +202,16 @@
             font-size: 2rem;
         }
 
-        .numbers-box {
+        .overflow {
+            overflow-y: scroll;
+            max-height: 88%;
 
+        }
+
+        .numbers-box {
             display: flex;
             flex-direction: column;
             justify-content: center;
-            // align-items: center;
-            max-height: 87.5%;
-
-            overflow: scroll;
         }
 
         li {
@@ -273,6 +221,8 @@
             text-align: center;
 
             padding: .3rem 1rem;
+
+            position: relative;
 
             border-bottom: 1px solid black;
 
