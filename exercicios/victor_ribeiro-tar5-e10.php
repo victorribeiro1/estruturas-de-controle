@@ -9,12 +9,12 @@
         "ford" => ["Mustang", "Ka", "Edge", "Territory"]
     ];
 
-    $counter = 1; // Para a segunda posição
-    
+    $counter = 1; // Para auxiliar na impressão dos elementos.
+                  // Inicializado com 1 pois o primeiro elemento
+                  // desejado se encontra na 2ª posição.
     
     foreach ($cars as $carBrands) {
         $currentBrand = array_search($carBrands, $cars);
-        
         
         if ($currentBrand !== "gm") {
             echo $cars[$currentBrand][$counter++];

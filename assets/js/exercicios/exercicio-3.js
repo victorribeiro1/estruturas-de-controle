@@ -1,35 +1,37 @@
 const textarea = document.getElementById('textarea')
 const output = document.getElementById('output')
 
+// função responsável por corrigir e agrupar os 
+// caracteres inseridos na entrada
+function getNumbers(textareaValue) {
+    let newArray = textareaValue.split(',')
 
-textarea.addEventListener('keyup', () => {
-    // if (isValid()) sort(textarea.value)
-    output.innerHTML = sort(textarea.value)
-
-    
-})
-
-function sort(array) {
-    array = array.split(',')
-
-    for (let element in array) {
-        if (!isNaN(parseInt(array[element]))) {
-            array[element] = parseInt(array[element])
-        }
-        else {
-            array.slice(index, index)
-        }
+    for (let index in newArray) {
+        if (isNaN(parseFloat(newArray[index]))) newArray.splice(index, 1) 
+        else newArray[index] = parseFloat(newArray[index])
     }
 
-    array = array.sort((a, b) => {
+    return newArray
+}
+
+// função responsável por ordenar a sequência 
+// na qual os números devem aparecer
+function sortNumbers(textareaValue) {
+    
+    let numbers = getNumbers(textareaValue)
+
+    numbers = numbers.sort((a, b) => {
         if (a > b) return 1
 
         if (a < b) return -1
-
+        
         return 0
     })
-
-    array = array.join(',&ensp;') + '.'
     
-    return array
+    const output = numbers.join(',&ensp;') + '.'
+    
+    return output
 }
+
+// EVENTS
+textarea.addEventListener('keyup', () => output.innerHTML = sortNumbers(textarea.value))
