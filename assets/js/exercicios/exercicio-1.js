@@ -14,5 +14,9 @@ function driverStatus($speed) {
 
 // EVENTS
 button.addEventListener('click', () => {
-    result.innerText = driverStatus(+inputText.value);
+    if (isNaN(+inputText.value)) inputText.classList.add('invalid')
+    else {
+        inputText.classList.add('invalid')
+        result.innerText = driverStatus(+inputText.value);
+    }
 })
