@@ -1,0 +1,312 @@
+.exercise-8 {
+    @include defaultFormatting;
+
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    header {
+        filter: blur(0px);
+        transition: .5s linear;
+        &.menu-is-active {
+            filter: blur(8px);
+        }
+    }
+
+    &__content-box {
+        filter: blur(0px);
+        transition: .5s linear;
+        &.menu-is-active {
+            filter: blur(8px);
+        }
+        height: 85%;
+        width: 100%;
+
+        position: relative;
+        z-index: 1;
+
+        position: absolute;
+        bottom: 0;
+        right: 0;
+
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .input-row {
+        &--2 {
+            transform: translateX(-5px);
+        }
+
+        span {
+            font-size: 4.2rem !important;
+        }
+    }
+
+    &__inputNumber {
+        display: inline;
+        font-size: 6rem;
+
+        background-color: #000;
+        border-radius: 4px;
+        color: #FFF;
+
+        text-align: center;
+        font-family: "New York-1";
+
+        width: 17rem;
+        flex: none;
+
+        border: none;
+        outline: none;
+    }
+
+    &__input-box {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        position: relative;
+        right: -19rem;
+
+        top: -5rem;
+        
+        span {
+            pointer-events: none;
+            height: 100%;
+            font-size: 2rem;
+
+            color: #757575;
+
+            transform: translate(-75px, 9px);
+
+            &.invalid {
+                color: red;
+            }
+        }
+    }
+
+    &__inputText {
+        display: inline;
+
+        font-size: 5rem;
+
+        padding-left: 2.3rem;
+
+        background-color: transparent;
+        border: none;
+        border-bottom: 2px solid black;
+        color: #000;
+
+        text-align: left;
+        font-family: "New York-1";
+
+        width: 80%;
+        flex: none;
+
+        outline: none;
+
+        position: relative;
+        display: block;
+
+        transition: .1s linear;
+
+        &.invalid {
+            border-bottom: 2px solid red;
+        }
+    }
+
+    .checkbox-box {
+        position: relative;
+        left: -17.5rem;
+        top: 2rem;
+
+        font-size: 3rem;
+
+        display: flex;
+        text-align: center;
+    }
+    
+    .checkbox-elements {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .inputs-box {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        // height: 15rem;
+        width: 30rem;
+
+        :first-child {
+            margin-bottom: 4rem;
+
+        }
+
+        input.exercise-5__inputNumber {
+            width: 80% !important;
+            display: block;
+            position: relative;
+        }
+    }
+
+    .input {
+        display: none;
+
+        &:active {
+            & ~ .ball {
+                background-color: #000;
+            }
+        }
+    }
+
+    .input-row {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        span {
+            font-size: 5.5rem;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+
+            transform: translateY(18px);
+
+            margin-right: 2rem;
+        }
+    }
+
+    ul {
+        border: 2px solid black;
+        border-radius: 3px;
+
+        display: flex;
+
+        font-size: 2rem;
+
+        // height: 2rem;
+        max-height: 20rem;
+
+        .header {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+
+            font-size: 2.5rem;
+
+            :last-child {
+                width: 21% !important;
+
+                transform: translateX(30px);
+            }
+
+            span {
+                text-align: center;
+                width: 10% !important;
+            }
+        }
+
+        span {
+            font-weight: 1000;
+        }
+
+        .list {
+            width: 100%;
+
+            display: flex;
+            flex-direction: column;
+        }
+
+        li {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+
+            width: 100;
+        }
+
+        .overflow {
+            overflow: scroll;
+            max-height: 80%;
+        }
+    }
+
+    .total-sum {
+        font-size: 3rem;
+        border-bottom: 1px solid black;
+    }
+
+    ul {
+        width: 50.34%;
+
+        white-space: nowrap;
+        
+        position: relative;
+        
+        min-height: 30rem;
+        max-height: 30rem;
+        
+        &:not(:last-child) {
+            border-right: 2px solid black;
+        }
+
+        .overflow {
+            overflow-y: scroll;
+            max-height: 88%;
+
+        }
+
+        .numbers-box {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        li {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+
+            font-size: 2.4rem;
+            text-align: center;
+
+            padding: .3rem 1rem;
+
+            position: relative;
+
+            border-bottom: 1px solid black;
+
+            :last-child {
+                width: 40%;
+            }
+
+            span {
+                width: 29%;
+            }
+
+            ::-webkit-scrollbar {
+                width: 4px;
+                z-index: -1;
+            
+                &-thumb {
+                    background: #000;
+                    // border-radius: 999px;
+                    height: 10px;
+                }
+                
+                &-track {
+                    background-color: red;
+                }
+            }
+        }
+    }
+    
+}
