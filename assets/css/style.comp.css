@@ -253,10 +253,8 @@ body {
     align-items: flex-start; }
     .toggle-menu__icon-box:hover {
       cursor: pointer; }
-    .toggle-menu__icon-box:hover .toggle-menu__icon {
-      background-color: #FFF; }
-      .toggle-menu__icon-box:hover .toggle-menu__icon--2 {
-        width: 100%; }
+    .toggle-menu__icon-box:hover .toggle-menu__icon--2 {
+      width: 100%; }
   .toggle-menu__icon {
     background-color: #000;
     border-radius: 999px;
