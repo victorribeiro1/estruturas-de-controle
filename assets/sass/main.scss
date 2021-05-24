@@ -15,9 +15,6 @@
 @import "layout/navigation";
 @import "layout/toggle.menu";
 
-@import "themes/dark-mode";
-@import "themes/light-mode";
-
 @import "pages/exercicios/exercicio-1";
 @import "pages/exercicios/exercicio-2";
 @import "pages/exercicios/exercicio-3";
@@ -30,5 +27,5 @@
 @import "pages/exercicios/exercicio-10";
 @import "pages/exercicios/exercicio-11";
 
-@import "pages/index/intro";
-@import "pages/index/menu";
+@import "pages/intro";
+@import "pages/menu";
