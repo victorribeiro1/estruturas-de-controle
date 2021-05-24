@@ -1,4 +1,5 @@
 const listBox = document.querySelector('.list-box')
+const select = document.getElementById('select')
 
 $users = [
     {
@@ -7,8 +8,8 @@ $users = [
         "senha" : "123456"
     },
     {
-        "nome" : "Isabel Martines",
-        "email" : "isabel4312@gmail.com",
+        "nome" : "Isabel",
+        "email" : "isabel4123@gmail.com",
         "senha" : "3d54cd5"
     },
     {
@@ -22,7 +23,7 @@ $users = [
         "senha" : "5g4r4GTH"
     },
     {
-        "nome" : "Menezes Tenessi Soárez",
+        "nome" : "Dalila Tenessi Soárez",
         "email" : "Menezes1212@gmail.com",
         "senha" : "12_j@A6"
     }
@@ -53,8 +54,6 @@ function createList(title, users) {
     })
 }
 
-
-const select = document.getElementById('select')
 
 select.addEventListener('change', e => {
     if (e.target.value == "name") {
