@@ -1,18 +1,17 @@
 @import "abstract/animations";
-@import "abstract/variables";
+@import "utils/variables";
+@import "utils/mixin";
 
-@import "base/base";
-@import "base/cursor";
+@import "base/normalize";
+@import "base/reset";
 @import "base/fonts";
-@import "base/mixin";
+@import "base/base";
 @import "base/scrollbar";
 @import "base/typography";
-@import "base/utilities";
 
 @import "components/header";
 
 @import "layout/background";
-@import "layout/navigation";
 @import "layout/toggle.menu";
 
 @import "pages/exercicios/exercicio-1";

@@ -1,28 +1,23 @@
 {
   "name": "estruturas-de-controle",
-  "version": "3.0.0",
-  "description": "Tarefa 5 - 1º quinzena de maio de 2021",
+  "version": "1.0.0",
+  "description": "Olá pessoal! Deixo aqui para os interessados uma de minhas atividades da época em que eu estava prestando o curso técnico de informática para a internet. Esta foi uma atividade referente à disciplina de PW1 (Programação Web \"Level 1\") e, caso queiram se divertir assim como eu, dentro desse repositório há uma pasta denominada \"exercícios\", que contém **apenas** o enunciado de cada desafio; assim como há também outra pasta com o nome de \"resolução exercícios\", caso queira checar, conferir, tirar dúvidas, comparar, etc... <br />\r Flw! ✌️😎",
   "main": "index.js",
   "scripts": {
-    "start": "npm-run-all --parallel build:css watch:sass",
-    "watch:sass": "node-sass assets/sass/main.scss assets/css/style.css -w",
-    "devserver": "live-server",
-    "compile:sass": "node-sass assets/sass/main.scss assets/css/style.comp.css",
-    "concat:css": "concat -o assets/css/style.concat.css assets/css/normalize.css assets/css/reset.css assets/css/style.comp.css",
-    "prefix:css": "postcss --use autoprefixer -b `last 10 versions` assets/css/style.concat.css -o assets/css/style.prefix.css",
-    "compress:css": "node-sass assets/css/style.prefix.css assets/css/style.min.css --output-style compressed",
-    "build:css": "npm-run-all compile:sass concat:css prefix:css compress:css"
+    
+  },
+  "devDependencies": {
+
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/victorribeiro1/estruturas-de-controle.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "devDependencies": {
-    "autoprefixer": "^7.1.4",
-    "concat": "^1.0.3",
-    "node-sass": "^4.5.3",
-    "npm-run-all": "4.1.5",
-    "postcss": "^8.2.8",
-    "postcss-cli": "^8.3.1",
-    "live-server": "1.2.1"
-  }
+  "bugs": {
+    "url": "https://github.com/victorribeiro1/estruturas-de-controle/issues"
+  },
+  "homepage": "https://github.com/victorribeiro1/estruturas-de-controle#readme"
 }
