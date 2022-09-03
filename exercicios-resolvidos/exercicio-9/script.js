@@ -40,50 +40,50 @@ function confer() {
         if (isValid()) confer()
     })
 
-function getIntervalBetween($x, $y) {
-    $allNumbers = [];
+function getIntervalBetween(x, y) {
+    allNumbers = [];
 
-    if ($x == $y || $x - $y == 1 || $x - $y == -1) {
-        $allNumbers.push(0);
-        return $allNumbers;
+    if (x == y || x - y == 1 || x - y == -1) {
+        allNumbers.push(0);
+        return allNumbers;
     }
 
-    let min = $x < $y ? $x : $y;
-    let max = $x > $y ? $x : $y;
+    let min = x < y ? x : y;
+    let max = x > y ? x : y;
 
 
     console.log('Min: ' + min)
     console.log('Max: ' + max)
     
     while (min < max - 1) {
-        console.log('Depois do while: ' + $allNumbers)
-        $allNumbers.push(++min);
+        console.log('Depois do while: ' + allNumbers)
+        allNumbers.push(++min);
     }
 
-    return $allNumbers;
+    return allNumbers;
 }
 
-function getOddNumbers($allNumbers) {
-    $oddNumbers = [];
+function getOddNumbers(allNumbers) {
+    oddNumbers = [];
 
-    $allNumbers.forEach($number => {
-        if ($number % 2 !== 0) $oddNumbers.push($number);
+    allNumbers.forEach(number => {
+        if (number % 2 !== 0) oddNumbers.push(number);
     })
     
-    return $oddNumbers;
+    return oddNumbers;
 } 
 
-function sumOddNumbers($oddNumbers) {
-    // console.log($oddNumbers)
-    // const $totalSum = $oddNumbers.reduce((current, next) => current += next)
+function sumOddNumbers(oddNumbers) {
+    // console.log(oddNumbers)
+    // const totalSum = oddNumbers.reduce((current, next) => current += next)
 
     let totalSumArray = []
-    var $totalSum = 0
+    var totalSum = 0
 
-    for (let number of $oddNumbers) {
-        $totalSum += number
+    for (let number of oddNumbers) {
+        totalSum += number
     }
-    totalSumArray.push($totalSum)
+    totalSumArray.push(totalSum)
 
     return [totalSumArray]
 }
